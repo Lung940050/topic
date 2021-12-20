@@ -1,0 +1,551 @@
+body{
+    margin: 0;
+    background-color: #141414;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mynavbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 300;
+    text-align: center;
+}
+
+.mynavbar-left, .topic, .logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+.mynavbar-left{
+    margin: 0 20px ;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+}
+
+.topic{
+    margin-left: 10px; 
+}
+
+.topic a{
+    padding: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+
+.logo{
+    margin-right: 20px;
+}
+.logo i{
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.menu{
+    display: none;
+    z-index: 300;
+}
+
+.menu-line{
+    width: 20px;
+    height: 1px;
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    margin-bottom: 3px;
+}
+
+@media all and (max-width:480px) {
+    .logo{
+        display: none;
+    }
+
+    .mynavbar{
+        height: 50px;
+    }
+
+   
+    .topic{
+        flex-direction: column;
+        position: relative;
+        background-color: rgba(153, 153, 153, 0.466);
+        left: 60%;
+        top: 150%;
+        
+    }
+    .menu{
+        display: block;
+        padding: 15px;
+    }
+
+    .topic {
+        padding-top: 5px;
+        display: none;
+        
+    }
+
+    .topic a{
+        display: block;
+        border-bottom: 1px solid #fff;
+        text-align: center;
+        padding: 5px 0;
+        
+    }
+
+    .active{
+        display: block;
+    }
+}
+
+.page1-main .text{
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+    color: #fff;
+    padding-top: 80px;
+}
+
+
+.page1-main .text h1{
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+
+.ctrl, .cvzx{
+    margin-top: 0; 
+    
+}
+
+.type {
+    height: 60vh;
+    color: #FFF;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+  }
+  
+  .blinking-cursor {
+    animation: blink 1s steps(2, start) infinite;
+  }
+  
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+
+
+
+
+
+.ctrl-main{
+    position: relative;
+    float: right;
+    margin-right: 3%;
+    
+}
+
+@keyframes hand{
+    0%{
+        transform: translateY(0);
+    }
+    
+    50%{
+        transform: translateY(30px);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.hand1{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    animation: hand 3s infinite;
+}
+
+.hand2{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    animation: hand 3.5s infinite;
+}
+
+
+
+/* .book{
+    position: relative;
+    width: 283px;
+    height: 400px;
+    transform-style: preserve-3d;
+    margin: 0 20px;
+    
+    
+}
+
+.front, .page1, .page2, .page3, .page4, .page5, .page6, .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out, box-shadow .3s ease-in-out;
+    border-bottom-right-radius:.5em ;
+    border-top-right-radius:.5em ;
+
+}
+
+.front{
+    background:url(img/book.jpg) ;
+}
+
+.back{
+    background-color: rgb(58, 58, 58);
+}
+
+.page1{
+    background-color: rgb(240, 240, 240);
+}
+
+.page2{
+    background-color: rgb(240, 240, 240);
+}
+
+.page3{
+    background-color: rgb(240, 240, 240);
+}
+
+.page4{
+    background-color: rgb(240, 240, 240);
+}
+
+.page4 p{
+    
+    line-height: 30px;
+    padding: 5px;
+}
+
+.page5{
+    background-color: rgb(240, 240, 240);
+}
+
+.page6{
+    background-color: rgb(240, 240, 240);
+}
+
+.book:hover .front{
+    transform: rotateY(-160deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .page1{
+    transform: rotateY(-150deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .page2{
+    transform: rotateY(-140deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .page3{
+    transform: rotateY(-130deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .page4{
+    transform: rotateY(-50deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .page5{
+    transform: rotateY(-40deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .page6{
+    transform: rotateY(-30deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .back{
+    transform: rotateY(-20deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+} */
+
+.page2{
+    margin: 100px 0;
+}
+
+.all-course{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.all-course img{
+    max-width: 100%;
+}
+
+
+
+.all-course p{
+    line-height: 30px;
+}
+
+.course1{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.course2{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.course3{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.top-text{
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    letter-spacing: 0.08em;
+    line-height: 30px;
+}
+
+.top-text p{
+    width: 40%;
+}
+
+.page5 h2, .page4 h2, .page3 h2{
+    color: #fff;
+    padding: 0 50px;
+    margin: 50px 0;
+    text-align: center;
+    letter-spacing: 0.08em;
+}
+.rule .pre, .start{
+    display: flex;
+    margin: 40px 0;
+}
+
+.pre1, .pre2, .pre3, .pre4, .pre5, .start1, .start2, .start3, .start4, .start5{
+    width: 20%;
+    padding: 0 30px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.08em;
+    line-height: 20px;
+}
+
+h3{
+    font-weight: 500;
+    
+}
+
+.page4 .intro{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.intro .pic{
+    display: flex;
+}
+
+.intro-left{
+    position: absolute;
+    color: #fff;
+    width: 18%;
+    line-height: 30px;
+    left: 10%;
+    top: 30%;
+}
+
+.intro-left p{
+    padding: 50px 0;
+}
+
+.intro-right{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width: 20%;
+    color: #fff;
+    line-height: 30px;
+}
+
+.page5{
+    margin-bottom: 50px;
+}
+
+.page5 .card{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.ch-sl, .item-sl, .event-sl{
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 1em;
+}
+
+.ch-slider{
+    width: 3730px;
+    display: flex;
+    padding: 0;   /* 不知道哪來的padding */ 
+    transform: translateX(0px);
+    transition: .8s;
+    margin: 0;   /* 不知道哪來的margin*/ 
+}
+
+.ch-slider img{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+  
+}
+
+.ch-sl .slider-dots{
+    position: absolute;
+    display: flex;
+    padding: 0; /* 不知道哪來的padding */ 
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ch-sl .slider-dots li{
+    width: 6px;
+    height:6px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 0 5px;
+}
+
+
+.item-slider{
+    width: 2984px;
+    display: flex;
+    padding: 0;   /* 不知道哪來的padding */ 
+    transform: translateX(0px);
+    transition: .8s;
+    margin: 0;   /* 不知道哪來的margin*/ 
+}
+
+.item-slider img{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+  
+}
+
+.item-sl .slider-dots-2{
+    position: absolute;
+    display: flex;
+    padding: 0; /* 不知道哪來的padding */ 
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.item-sl .slider-dots-2 li{
+    width: 6px;
+    height:6px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 0 5px;
+}
+
+.event-slider{
+    width: 3730px;
+    display: flex;
+    padding: 0;   /* 不知道哪來的padding */ 
+    transform: translateX(0px);
+    transition: .8s;
+    margin: 0;   /* 不知道哪來的margin*/ 
+}
+
+.event-slider img{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+  
+}
+
+.event-sl .slider-dots-3{
+    position: absolute;
+    display: flex;
+    padding: 0; /* 不知道哪來的padding */ 
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.event-sl .slider-dots-3 li{
+    width: 6px;
+    height:6px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 0 5px;
+}
+
+.character, .item, .event{
+    width: 300px;
+}
+
+.card p{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.08em;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

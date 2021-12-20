@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metalsmithing</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="metal.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+</head>
+
+<style> 
+
+
+
+  @media (min-width:768px) and (max-width:1024px) {
+      .mynavbar{
+        max-width: 100vw;
+      }
+      .mynavbar .topic {
+        font-size: 0.8em;
+        text-align: center;
+      }
+      .page1 h1{
+          font-size: 6em;
+          letter-spacing: normal;
+      }
+  }
+
+
+  @media (max-width:1250px) {
+      .page2 .white{
+        display: none;
+      }
+
+      .page2 .random-text{
+          width: 100%;
+          
+          text-align: center;
+          
+      }
+      .page2 .random-text h1{
+        
+         width: 100%;
+         margin: 25px 0;
+        
+      }
+      .page2 .random-text p{
+         width: 100%;
+         margin-top: 380px;
+  
+      }
+  }
+
+  @media (max-width:768px) {
+      .page2 .random{
+          width: 100vw;
+          display: inline-block;
+          
+      }
+
+      .random img{
+          width: 100%;
+      }
+
+      .page3 .all .name p{
+          padding: 0 20px;
+          text-align: center;
+      }
+
+      .page4 .brass{
+          width: 100%;
+      }
+
+      .page4 .brass img{
+          width: 100%;
+      }
+
+      .page4 .brass .text{
+          left: 5%;
+      }
+
+      .page4 .brass .text h1{
+        color: #1E0E0C;
+      }
+
+      .page4 .brass .text p{
+        color: #1E0E0C;
+      }
+
+      .page5 .ring-right .line{
+          width: 80%;
+      }
+      .page5 .ring-right .line img{
+          width: 60%;
+          top: 15%;
+      }
+
+      .page5 .ring .ring-right{
+          width: 100vw;
+          margin: 0;
+      }
+
+      .ring-right img{
+          width: 100%;
+         
+      }
+
+      .page5 .ring .ring-left{
+          margin-left: 8%;
+          margin-right: 8%;
+          margin-top: 0;
+      }
+  }
+
+
+  @media (max-width:415px) {
+      .page2, .page3, .page4, .page5{
+          margin: 50px 0;
+      }
+
+      .page1 .title h1{
+          font-size: 2em;
+          letter-spacing: 0.1em;
+      }
+
+      .mynavbar{
+          max-width: 414px;
+      }
+
+      .page2 .random{
+          width: 100vw;
+          display: inline-block;
+      }
+
+      .page2 .random h1{
+          font-size: 2em;
+          margin: 10px 0;
+      }
+
+      .page2 .random p{
+          margin-top: 200px;
+          font-size: 0.08em;
+          letter-spacing: 0.2em;
+          line-height: 20px;
+      }
+
+      .random img{
+          width: 100%;
+      }
+
+      .page3 .all .name p{
+          padding: 0 8px;
+          text-align: center;
+          font-size: 0.03em;
+          letter-spacing: 0.2em;
+          line-height: 15px;
+      }
+
+      .page3 h1{
+          font-size: 1.5em;
+      }
+
+      .page4 .brass{
+          width: 100%;
+      }
+
+      .page4 .brass img{
+          width: 100%;
+      }
+
+      .page4 .brass .text{
+          left: 5%;
+      }
+
+      .page4 .brass .text h1{
+          font-size: 1.5em;
+        color: #1E0E0C;
+      }
+
+      .page4 .brass .text p{
+        margin: 5px 0;
+        color: #1E0E0C;
+        font-size: 0.06em;
+          letter-spacing: 0.2em;
+          line-height: 15px;
+
+      }
+
+      .page5 .ring-right .line{
+          width: 80%;
+      }
+      .page5 .ring-right .line img{
+          width: 70%;
+          top: 15%;
+      }
+
+      .page5 .ring .ring-right{
+          width: 100vw;
+          margin: 0;
+      }
+
+      .ring-right img{
+          width: 100%;
+         
+      }
+
+      .page5 .ring .ring-left{
+          margin-left: 8%;
+          margin-right: 8%;
+          margin-top: 0;
+      }
+
+      .page5 .ring .ring-left img{
+          width: 50%;
+          margin-top: 30px;
+      }
+
+      .page5 .ring .ring-left h1{
+          font-size: 1.5em;
+          margin: 5px 0;
+      }
+
+      .page5 .ring .ring-left p{
+          font-size: 0.06em;
+          letter-spacing: 0.2em;
+          line-height: 15px;
+      }
+  }
+
+  
+
+
+</style>
+
+<body>
+    <nav class="mynavbar">
+        <div class="mynavbar-left"
+        ><a href="mainpage.html" style="text-decoration: none; color: rgb(255, 255, 255);"><h2>LUNG</h2></a>
+        <div class="topic" id="nav-list">
+            <a href="industral.html">Industrial Design</a>
+            <a href="metalsmithing.html">Metalsmithing</a>
+            <a href="digital.html">Digital Drawing</a>
+            <a href="hand.html">Hand Draing </a> 
+            <!-- <a href="">UI Design</a> -->
+        </div>
+    </div>
+       
+        <div class="logo">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+
+
+    <div class="page1">
+        <div class="title">
+        <h1>Metalsmithing</h1>
+        </div>
+        
+    </div>
+
+
+    <div class="page2">
+        <div class="random">
+            <img src="img/radom-left.jpg" alt="" class="white">
+            <div class="random-text">
+                <h1>Radom Fate</h1>
+                <p>
+                    Dandelion drifting in the wind.<br>
+                    Where, will it go?<br>
+                    In the unseen world, is there any relationship pulling it?
+                </p>
+        
+            </div>
+            <img src="img/radom-right.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="page3">
+        <div class="all">
+            <div class="name">
+                <p>Azure Dragon </p>
+                <P>Black Tortoise</P>
+                <P>Kirin</P>
+                <P>White Tiger</P>
+                <P>Vermilion Bird</P>
+            </div>
+            <h1>Mythical beast’s Neck</h1>
+            <img src="img/neck.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="page4">
+        <div class="brass">
+            <div class="b-left">
+            <img src="img/metal-knife.jpg" alt="">
+            </div>
+            <div class="text">
+                <h1>Brass shuriken</h1>
+                <p>Shuriken made of brass, the blade can be stored
+                    for easy carrying.</p>
+            </div>
+            <div class="b-right">
+            <img src="img/metal-knife-hand.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="page5">
+        <div class="ring">
+           
+        <div class="ring-left">
+            <img src="img/sea-glass.png" alt="">
+            <h1>Ring</h1>
+            <p>The gems are made by<br> 
+                polishing with sea glass.</p>
+        </div>
+        <div class="ring-right">
+            <img src="img/metal-ring.jpg" alt="">
+            <div class="line">
+            <img src="img/line.png" alt="">
+            </div>
+                </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const naviList = document.getElementById('nav-list');
+        toggleButton.addEventListener('click', () =>{
+            naviList.classList.toggle('active');
+        })
+    </script>
+
+</body>
+</html>

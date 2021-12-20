@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industral</title>
+    <link rel="stylesheet" href="industral.css">
+    <link rel="stylesheet" href="power.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    
+</head>
+    
+<style>
+    @media (max-width:768px) {
+       
+
+        .page1 .title h1{
+            font-size: 1.8em;
+            margin-right: 0;
+        }
+
+        .page1 .title .design{
+            float: right;
+            margin-top: 300px; 
+        }
+
+        .page2 .oil-right img{
+            display: none;
+        }
+
+        .page2{
+            position: relative;
+        }
+
+        .oil-lamp .oil-right{
+            position: absolute;
+            width: 300px;
+            left: 48%;
+        }
+
+        .oil-right h1, p{
+            position: absolute;
+            width: 300px  
+        }
+
+        .oil-right h1{
+            font-size: 3.5em;
+            margin-top:50px ;
+        }
+
+        .oil-right p{
+            margin-top: 150px;
+        }
+
+        .page3 .top h1{
+            font-size: 3em;
+            margin-top: 5px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .page3 .bottom .left{
+            width: 50%;
+            justify-content: center;
+            margin-left: 5%;
+        }
+
+        .left .explain-1 img, .explain-2 img, .explain-3 img{
+            width: 80%; 
+        }
+
+        .chinese-lamp .right{
+            width: 45%;
+            margin-right: 5%;
+        }
+
+        .chinese-lamp .right-top{
+            width: 100%;
+        }
+        .chinese-lamp .right-top img{
+            width: 100%;
+        }
+
+        .page4{
+            padding-bottom: 100px;
+        }
+
+        .page4 .pet-bottom{
+            width: 80%;
+            margin-left: 10%;
+            
+        }
+
+        .page4 .bottom-left img{
+            width: 80%;
+        }
+
+        .page4 .bottom-right{
+            width: 80%;
+        }
+
+        .page5 p{
+            width: 710px;
+        }
+        
+        
+    }
+
+    @media (max-width:415px) {
+       .mynavbar{
+           max-width: 414px;
+           
+       }
+
+       .page1 .title h1{
+           font-size: 0.9em;
+           margin-right: 0;
+       }
+
+       .page1 .title .design{
+           float: right;
+           margin-top: 200px; 
+       }
+
+       .page2 .oil-right img{
+           display: none;
+       }
+
+       .page2{
+           position: relative;
+       }
+
+       .oil-lamp{
+           width: 100%;
+           padding: 50px 0;
+       }
+
+       .oil-lamp img{
+           width: 100%;
+       }
+
+       .oil-lamp .oil-right{
+           position: absolute;
+           
+           left: 45%;
+       }
+
+       .oil-right h1, p{
+           position: absolute;
+           
+       }
+
+       .oil-right h1{
+           font-size: 2em;
+           margin-top:220px ;
+           width: 180px;
+           
+           
+       }
+
+       .oil-right p{
+           display: none;
+       }
+
+       .page3 .top h1{
+           font-size: 2em;
+           margin-top: 190px;
+           width: 100%;
+           text-align: center;
+       }
+
+       .page3 .bottom .left{
+           width: 50%;
+           justify-content: center;
+           margin-left: 5%;
+       }
+
+       .left .explain-1 img, .explain-2 img, .explain-3 img{
+           width: 80%; 
+       }
+
+       .chinese-lamp .right{
+           width: 45%;
+           margin-right: 5%;
+       }
+
+       .chinese-lamp .right-top{
+           width: 100%;
+       }
+       .chinese-lamp .right-top img{
+           width: 100%;
+       }
+
+       .page4{
+           padding: 50px 0;
+       }
+
+       .page4 .pet-bottom{
+           width: 80%;
+           margin-left: 10%;
+           
+       }
+
+       .page4 h1{
+           font-size: 2em;
+       }
+
+       .page4 .bottom-left img{
+           width: 80%;
+       }
+
+       .page4 .bottom-right{
+           width: 80%;
+       }
+
+       .page5 p{
+           width: 370px;
+       }
+       
+       
+   }
+</style>
+<body>
+ 
+
+    <nav class="mynavbar">
+        <div class="mynavbar-left"
+        ><a href="mainpage.html" style="text-decoration: none; color: rgb(255, 255, 255);"><h2>LUNG</h2></a>
+        <div class="topic" id="nav-list">
+            <a href="industral.html">Industrial Design</a>
+            <a href="metalsmithing.html">Metalsmithing</a>
+            <a href="digital.html">Digital Drawing</a>
+            <a href="hand.html">Hand Draing </a> 
+            <!-- <a href="">UI Design</a> -->
+        </div>
+    </div>
+       
+        <div class="logo">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+
+
+    <div class="page1">
+        <div class="title">
+        <h1>Industral</h1>
+        <h1 class="design">Design</h1>
+        </div>
+
+    <section id="particles-js"></section>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    </div>
+
+
+    <div class="page2">
+        <div class="oil-lamp">
+            <img src="img/oil lamp.jpg" alt="">
+            <div class="oil-right">
+                <h1>Oil Lamp</h1>
+                <div class="right-bottom">
+                    <img src="img/oil-lamp-2.jpg" alt="">
+                    <p>In modern times, light bulbs are used to replace flames, and oil lamps are gradually declining. This product uses wood and bamboo to make the appearance of oil lamps. The light source uses a candle light bulb, which is suitable for home operation lights.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page3">
+        <div class="chinese-lamp">
+            <div class="top">
+            <h1>Chinese Lamp</h1>
+            <img src="img/light-main.jpg" alt="">
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <div class="explain-12">
+                    <div class="explain-1">
+                        <img src="img/1x/chinese-1.png" alt="">
+                        <!-- <p>Expanded view from top</p> -->
+                    </div>
+                    <div class="explain-2">
+                        <img src="img/1x/chinese-2.png" alt="">
+                        <!-- <p>Storage direction</p> -->
+                    </div>
+                    </div>
+                    <div class="explain-3">
+                        <img src="img/1x/chinese-3.png" alt="">
+                        <!-- <p>Exploded view</p> -->
+                    </div>
+                </div>
+                <div class="right">
+                        <div class="right-all">
+                            <div class="right-top">
+                                <div class="img-demo">
+                                    <img src="img/1x/cl-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="right-bottom">
+            
+                                    <div class="img-item">
+                                        <img src="img/1x/cl-1.png" alt="">
+                                    </div>
+                                    <div class="img-item">
+                                        <img src="img/1x/cl-2.png" alt="">
+                                    </div>
+                                    <div class="img-item">
+                                        <img src="img/1x/cl-3.png" alt="">
+                                    </div>
+                                    <div class="img-item">
+                                        <img src="img/1x/cl-4.png" alt="">
+                                    </div>
+                                
+                            </div>
+                            <div class="click-here">
+                                <a href="#">Click here</a>
+                                <i class="fas fa-angle-up"></i>
+                            </div>
+                        </div>
+            
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="page4">
+        <div class="pet">
+            <div class="pet-top">
+                <!-- <div class="pet-text">
+                <h1>Fur Baby!</h1>
+                <p>A detachable multifunctional pet stroller! The stowed stroller and multifunctional pet bag allow you to have everything with just this pet stroller</p>
+            </div> -->
+                <img src="img/pet.jpg" alt="">
+            </div>
+            <div class="pet-bottom">
+                <div class="bottom-left">
+                    <div class="img-demo2">
+                        <img src="img/1x/pet1.png" alt="">
+                    </div>
+                </div>
+                <div class="bottom-right">
+                    <h1>Features</h1>
+                    <div class="right-top">
+                        <div class="img-item2">
+                            <img src="img/1x/pet1.png" alt="">
+                        </div>
+                        <div class="img-item2">
+                            <img src="img/1x/pet2.png" alt="">
+                        </div>
+                        <div class="img-item2">
+                            <img src="img/1x/pet3.png" alt="">
+                        </div>
+                        </div>
+                        <div class="right-bottom">
+                        <div class="img-item2">
+                            <img src="img/1x/pet4.png" alt="">
+                        </div>
+                        <div class="img-item2">
+                            <img src="img/1x/pet5.png" alt="">
+                        </div>
+                        <div class="img-item2">
+                            <img src="img/1x/pet6.png" alt="">
+                        </div>
+                        </div>
+                        <div class="click-here">
+                            <a href="#">Click here</a>
+                            <i class="fas fa-angle-up"></i>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="page5">
+        <img src="img/ctrl.jpg" alt="">
+        <div class="ctrl">
+        <a href="ctrl.html" class="neon-button">Click here</a>
+        <p>to watch more about CTRL+</p>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $('.img-item > img').click(function () {
+            const imgSrc = $(this).attr('src');
+            $('.img-demo > img').attr('src', imgSrc);
+        });
+    </script>
+     <script>
+        $('.img-item2 > img').click(function () {
+            const imgSrc = $(this).attr('src');
+            $('.img-demo2 > img').attr('src', imgSrc);
+        });
+    </script>
+
+
+    <script>
+        jQuery(document).ready(function(){
+   $('.title').mousemove(function(e){
+     var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+     var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+     $('.title').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(4,50,70,.8), '+rYP/8+'px '+rXP/60+'px rgba(60,150,170,1), '+rXP/70+'px '+rYP/12+'px rgba(120,180,215,.7)');
+   });
+});
+    </script>
+      <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const naviList = document.getElementById('nav-list');
+        toggleButton.addEventListener('click', () =>{
+            naviList.classList.toggle('active');
+        })
+      </script>
+
+    
+</body>
+</html>

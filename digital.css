@@ -1,0 +1,248 @@
+body {
+    background-color: #fff;
+    margin:0;
+ }
+ 
+ .mynavbar{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     position: fixed;
+     z-index: 300;
+ }
+ 
+ .mynavbar-left, .topic, .logo{
+     display: flex;
+     align-items: center;
+     
+ }
+ 
+ .mynavbar-left{
+     margin: 0 20px ;
+     font-family:Arial, Helvetica, sans-serif;
+     font-style: italic;
+     letter-spacing: 3px;
+     color: rgb(30, 30, 30);
+     text-align: center;
+ }
+ 
+ .topic{
+     margin-left: 10px; 
+ }
+ 
+ .topic a{
+     padding: 0 10px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-style: normal;
+     letter-spacing: 1px;
+     font-size: 1em;
+     color: rgb(30, 30, 30);
+     text-decoration: none;
+ }
+ 
+ 
+ 
+ .logo{
+     margin-right: 20px;
+ }
+ .logo i{
+     padding: 0 10px;
+     font-size: 1.5em;
+     color: rgb(30, 30, 30);
+ }
+
+ .menu{
+    display: none;
+    z-index: 300;
+}
+
+.menu-line{
+    width: 20px;
+    height: 1px;
+    color: #111;
+    border-bottom: 3px solid #111;
+    margin-bottom: 3px;
+}
+
+@media all and (max-width:480px) {
+    .logo{
+        display: none;
+    }
+
+    .mynavbar{
+        height: 50px;
+    }
+
+   
+    .topic{
+        flex-direction: column;
+        position: relative;
+        background-color: rgba(153, 153, 153, 0.466);
+        left: 60%;
+        top: 150%;
+        
+    }
+    .menu{
+        display: block;
+        padding: 15px;
+    }
+
+    .topic {
+        padding-top: 5px;
+        display: none;
+        
+    }
+
+    .topic a{
+        display: block;
+        border-bottom: 1px solid #fff;
+        text-align: center;
+        padding: 5px 0;
+        
+    }
+
+    .active{
+        display: block;
+    }
+}
+ 
+ .page1{
+     width: 100%;
+     height: 100%;
+     
+     background-image: url(img/1x/d1.png),
+                       url(img/1x/d2.png), 
+                       url(img/1x/d3.png), 
+                       url(img/1x/d4.png),
+                       url(img/1x/d5.png);
+
+    background-color: rgba(0, 0, 0, .5);
+                       
+    background-blend-mode: multiply;
+     background-size:15%;
+     background-repeat: no-repeat;
+     background-position: left,
+                          25%,
+                          center,
+                          75%,
+                          right;
+     /* animation: img-gradient 3s ; */
+ 
+     background-color: lightcoral;
+     animation: color 10s infinite;
+      
+ }
+ 
+ @keyframes color{
+     0%{
+         background-color: #A775C5;
+         
+     }
+     20%{
+         background-color: #F1A95C;
+     }
+     40%{
+         background-color: #6BACFA;
+     }
+     60%{
+         background-color: #E7A0C9;
+     }
+     80%{
+         background-color: #F35C5D;
+     }
+     100%{
+         background-color: #A775C5;
+         
+     }
+ 
+ }
+ 
+ .patterns {
+     position: relative;
+   height: 100vh;
+   
+ }
+ 
+ svg{
+     height: 100%;
+     width: 100%;
+ }
+ 
+ svg text {
+   font-family: Arial, Helvetica, sans-serif;
+   letter-spacing: 10px;
+   stroke: #48b2f8;
+   font-size: 150px;
+   font-weight: 700;
+   stroke-width: 3;
+   
+   animation: textAnimate 5s infinite alternate;
+   position: absolute;
+   /* top: 100%;
+   left: 50%; */
+   
+ }
+ 
+ @keyframes textAnimate {
+   0% {
+     stroke-dasharray: 0 50%;
+     stroke-dashoffset:  20%;
+     fill:hsl(0, 0%, 100%)
+ 
+   }
+   
+   100% {
+     stroke-dasharray: 50% 0;
+     stroke-dashoffset: -20%;
+     fill: hsla(189, 68%, 75%,0%)
+   }
+   
+ }
+ 
+ 
+ @keyframes wrapper-gradient {
+   0% {
+     transform: translateY(-100%);
+   }
+   100% {
+     transform: translateY(0);
+   }
+ }
+ @keyframes img-gradient {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+ 
+ .page2{
+     width: 100%;
+     
+ }
+ 
+ .page2 li{
+     list-style: none;
+     width: 18.5%;
+     height: 18.5%;
+     padding: 0.75%;
+ }
+ 
+ .page2 ul{
+     padding: 0;
+     margin: 0;
+     display: flex;
+     
+     flex-wrap: wrap;
+ }
+ 
+ li img{
+     width: 100%;
+     height: auto;
+     object-fit: cover;
+     
+ }
+
+
+ 

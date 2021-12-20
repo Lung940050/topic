@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Drawing</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="digital.css">
+</head>
+
+<style>
+  @media (max-width:1300px) {
+    .page1{
+     width: 100%;
+     height: 100%;
+     
+     background-image: url(img/dp1.jpg),
+                       url(img/dp2.jpg), 
+                       url(img/dp3.jpg), 
+                       url(img/dp4.jpg),
+                       url(img/dp5.jpg);
+
+    background-color: rgba(0, 0, 0, .5);
+                       
+    background-blend-mode: multiply;
+     background-size:80%;
+     background-repeat: no-repeat;
+     background-position: top right,
+                          left 25%,
+                          center right,
+                          left 75%,
+                          bottom right;
+     /* animation: img-gradient 3s ; */
+ 
+     background-color: lightcoral;
+     animation: color 10s infinite;
+      
+ }
+
+
+
+  svg text{
+    font-size: 100px;
+    word-wrap: break-word;
+    font-size: 8em;
+    
+  }
+  }
+
+  @media (max-width:768px) {
+    svg text{
+      font-size: 5em;
+    }
+
+    svg{
+      height: 70%;
+    }
+
+    .page2 li{
+     list-style: none;
+     width: 23.5%;
+     height: 23.5%;
+     padding: 0.7%;
+ }
+  }
+
+  @media (max-width:415px) {
+    svg text{
+      font-size: 2em;
+      stroke-width: 1.5;
+    }
+
+    svg{
+      height: 70%;
+    }
+
+    .page2 li{
+     list-style: none;
+     width: 31.8%;
+     height: 31.8%;
+     padding: 0.7%;
+  }}
+</style>
+
+
+<body>
+  <nav class="mynavbar">
+    <div class="mynavbar-left"
+    ><a href="mainpage.html" style="text-decoration: none; color: #111;"><h2>LUNG</h2></a>
+    <div class="topic" id="nav-list">
+        <a href="industral.html">Industrial Design</a>
+        <a href="metalsmithing.html">Metalsmithing</a>
+        <a href="digital.html">Digital Drawing</a>
+        <a href="hand.html">Hand Draing </a> 
+        <!-- <a href="">UI Design</a> -->
+    </div>
+</div>
+   
+    <div class="logo">
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram-square"></i></a>
+    </div>
+    <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+</nav>
+
+    <div class="page1">
+        <div class="patterns">
+            <svg >
+               
+           <text x="50%" y="60%"  text-anchor="middle"  >
+             Digital Drawing
+           </text>
+           </svg>
+          </div>
+    
+</div>
+
+<div class="page2">
+    <div class="wrapper">
+		<div class="gallery">
+			<ul>
+				<li><img src="img/shame/g1.jpg"></li>
+				<li><img src="img/shame/g2.jpg"></li>
+				<li><img src="img/shame/g3.jpg"></li>
+				<li><img src="img/shame/g4.jpg"></li>
+				<li><img src="img/shame/g5.jpg"></li>
+				<li><img src="img/shame/1.jpg"></li>
+				<li><img src="img/shame/2.jpg"></li>
+				<li><img src="img/shame/3.jpg"></li>
+				<li><img src="img/shame/4.jpg"></li>
+				<li><img src="img/shame/5.jpg"></li>
+				<li><img src="img/shame/6.jpg"></li>
+				<li><img src="img/shame/7.jpg"></li>
+				<li><img src="img/shame/8.jpg"></li>
+				<li><img src="img/shame/9.jpg"></li>
+				<li><img src="img/shame/10.jpg"></li>
+				<li><img src="img/shame/101.jpg"></li>
+				<li><img src="img/shame/102.jpg"></li>
+				<li><img src="img/shame/103.jpg"></li>
+				<li><img src="img/shame/104.jpg"></li>
+				<li><img src="img/shame/105.jpg"></li>
+				<li><img src="img/shame/106.jpg"></li>
+				<li><img src="img/shame/107.jpg"></li>
+				<li><img src="img/shame/108.jpg"></li>
+				<li><img src="img/shame/109.jpg"></li>
+				<li><img src="img/shame/110.jpg"></li>
+			</ul>
+		</div>
+</div>
+
+<script>
+  const toggleButton = document.getElementById('toggle-button');
+  const naviList = document.getElementById('nav-list');
+  toggleButton.addEventListener('click', () =>{
+      naviList.classList.toggle('active');
+  })
+</script>
+  </body>
+</html>

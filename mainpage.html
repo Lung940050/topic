@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainpage</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="stylesheet" href="style-marqee.css">
+</head>
+
+<style>
+    @keyframes leaves { 
+       0% {             
+           transform: translate(0px, 0px);            
+        }            
+        5% {                
+           transform: translate(0px, -10px);            
+        }            
+        10% {                
+           transform: translate(0px, 0px);
+        }
+}
+
+.scroll i{
+    animation: leaves 3s ease-in-out 3s infinite alternate;
+    -webkit-animation: leaves 3s ease-in-out 3s infinite alternate;
+     -moz-animation: leaves 3s ease-in-out 3s infinite alternate;
+    -o-animation: leaves 3s ease-in-out 3s infinite alternate;
+}
+
+
+/* @keyframes slider-left {
+	0%,15% {
+	left:0;
+    }
+
+    50%,65% {
+	left:-600px;
+    }
+
+    100% {
+	left:-1200px;
+    }
+}
+
+.left-slider{
+    animation: slider-left 6s infinite;
+} */
+@media (max-width:768px) {
+    .right{
+        display: none
+    }
+
+    .mynavbar{
+        max-width: 768px;
+    }
+
+    .page2{
+        max-width: 768px;
+        width: 100%;
+    }
+
+    .page2 .select{
+        max-height: 400px;
+    }
+
+.select img{
+    width: 100%;
+}
+
+.select h5{
+    height: 400px;
+}
+
+.left{
+    margin: 50px auto;
+}
+
+.aboutme .imguse img{ 
+    padding: 0 10px ;
+}
+
+}
+
+@media (max-width:415px) {
+    .right{
+        display: none
+    }
+
+    .page1 .top-word h1{
+        font-size: 3em;
+        width: 100vw;
+        top: 3%;
+    }
+
+    .popular-slider{
+        max-width: 300px;
+        height: 200px;
+    }
+
+    .popular-slider li{
+        width: 50%;
+    }
+
+    .popular-slider li img{
+        width: 50%;
+    }
+
+    .mynavbar{
+        max-width: 415px;
+    }
+
+    .marqee{
+        height: 100px;
+    }
+
+    .marqee ul li{
+        font-size:50px ;
+    }
+
+    .page2{
+        max-width: 415px;
+        width: 100%;
+    }
+
+    .page2 .select{
+        max-height: 300px;
+    }
+
+.select img{
+    width: 100%;
+}
+
+.select h5{
+    height: 300px;
+}
+
+.left{
+    margin: 50px auto;
+}
+
+.page2-2{
+    margin-top: 100px;
+}
+
+.page2-2 .aboutme{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.aboutme h1{
+    writing-mode:horizontal-tb;
+    margin-top: 80px;
+}
+
+.aboutme .imguse{
+    width: 100%;
+    
+    
+}
+
+.aboutme .imguse img{ 
+    padding: 0 20% ;
+    width: 60%;
+}
+
+.page2-2 .aboutme .word{
+    padding: 0 30px;
+}
+
+}
+
+
+</style>
+
+<body>
+<!-- header -->
+    <nav class="mynavbar">
+        <div class="mynavbar-left"
+        ><a href="mainpage.html" style="text-decoration: none; color: #111;"><h2>LUNG</h2></a>
+        <div class="topic" id="nav-list">
+            <a href="industral.html">Industrial Design</a>
+            <a href="metalsmithing.html">Metalsmithing</a>
+            <a href="digital.html">Digital Drawing</a>
+            <a href="hand.html">Hand Draing </a> 
+            <!-- <a href="">UI Design</a> -->
+        </div>
+    </div>
+       
+        <div class="logo">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+<!-- page1 -->
+    <div class="page1">
+    
+        <div class="all-slider">
+        <div class="left">
+            <div class="top-word">
+            <h1 class="ml3">
+                <span class="letter">P</span>
+                <span class="letter">o</span>
+                <span class="letter">P</span>
+                <span class="letter">u</span>
+                <span class="letter">l</span>
+                <span class="letter">a</span>
+                <span class="letter">r</span>
+            </h1>
+            </div>
+            <div class="popular-slider">
+                <ul class="left-slider">
+                    <li style="list-style-type: none;">
+                        <img src="img/popular-slider-1.jpg" alt="">
+                    </li>
+                    <li style="list-style-type: none;">
+                        <img src="img/popular-slider-2.jpg" alt="">
+                    </li>
+                    <li style="list-style-type: none;">
+                        <img src="img/popular-slider-3.jpg" alt="">
+                    </li>
+                </ul>
+                <ul class="slider-dots">
+                    <li style="list-style-type: none;"></li>
+                    <li style="list-style-type: none;"></li>
+                    <li style="list-style-type: none;"></li>
+                </ul>
+            </div>
+            <div class="about-box">
+                <div class="about">
+                    <a href="#">About me</a>
+                </div>
+            </div>
+            
+            <div class="scroll">
+                <a href="#">Scroll down</a>
+                <i class="fas fa-angle-down"></i>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top-word-r">
+            <h1>New Update</h1>
+            </div>
+            <div class="new-slider">
+                <ul class="right-slider">
+                    <li>
+                        <img src="img/new-slider-1.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/new-slider-2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/new-slider-3.jpg" alt="">
+                    </li>
+                </ul>
+                <ul class="slider-dots-r">
+                    <li style="list-style-type: none;"></li>
+                    <li style="list-style-type: none;"></li>
+                    <li style="list-style-type: none;"></li>
+                </ul>
+        </div>
+
+        </div>
+    </div>
+
+</div>
+<!-- page2 -->
+<div class="page2">
+    <div class="marqee">
+        <ul>
+            <li>View </li>
+            <li>more </li>
+            <li>works </li>
+            <li>in </li>
+            <li>the </li>
+            <li>categories </li>
+            <li>below</li>
+        </ul>
+    </div>
+    <div class="selection">
+        <div class="select box1">
+            <h5>
+                Industral Design
+            </h5>
+            <div class="hoveruse">
+            <a href="industral.html">
+                <img src="img/rectangle-1.jpg" alt="">
+            </a>
+        </div>
+        </div>
+        <div class="select box2">
+            <h5>
+                Metalsmithing
+            </h5>
+            <div class="hoveruse">
+            <a href="metalsmithing.html" class="rectangle">
+                <img src="img/rectangle-2.jpg" alt="">
+            </a>
+            </div>
+        </div>
+        <div class="select box3">
+            <h5>
+                Digital Drawing
+            </h5>
+            <div class="hoveruse">
+            <a href="digital.html">
+                <img src="img/rectangle-3.jpg" alt="">
+            </a>
+        </div>
+        </div>
+        <div class="select box4">
+            <h5>
+                Hand Drawing
+            </h5>
+            <div class="hoveruse">
+            <a href="hand.html" class="rectangle">
+                <img src="img/rectangle-4.jpg" alt="">
+            </a>
+            </div>
+        </div>
+        <!-- <div class="select box5">
+            <h5>
+                UI Design
+            </h5>
+            <div class="hoveruse">
+            <a href="" class="rectangle">
+                <img src="img/rectangle-4.jpg" alt="">
+            </a>
+            </div>
+        </div> -->
+    </div>
+
+    
+</div>
+<div class="page2-2">
+    <div class="aboutme">
+        <h1>About me</h1>
+        <div class="imguse">
+            <img src="img/me.jpg" alt="">
+        </div>
+        <div class="word">
+            <p>Name- Hsin Tung</p>
+            <p>E-mail- cathy25538084@gmail.com</p>
+            <p>Graduate from- National Kaohsiung University <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;of 
+                Science and Technology -<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;
+                Department of Industrial Design</p>
+            <p>Design Skills- Illustrator, Photoshop, Indesign, <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Clip studio, Procreate</p>
+            <p>Front end Skills- CSS, HTML</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $('.slider-dots li').hover(function () {
+            console.log('hi', $(this));
+            
+            $(this).css('background', '#fff');
+            $(this).siblings().css('background', 'transparent');
+
+            const nowIndex = $(this).index();
+            const nowX = nowIndex * -600 + 'px';
+            console.log('nowX:', nowX);
+
+            // $('.imgs-wrap').css('transform', 'translatex(' + nowx + ')');
+
+            $('.left-slider').css('transform', `translateX(${nowX})`);
+
+        });
+
+        $('.slider-dots-r li').hover(function () {
+            console.log('hi', $(this));
+            
+            $(this).css('background', '#fff');
+            $(this).siblings().css('background', 'transparent');
+
+            const nowIndex = $(this).index();
+            const nowX = nowIndex * -470 + 'px';
+            console.log('nowX:', nowX);
+
+            // $('.imgs-wrap').css('transform', 'translatex(' + nowx + ')');
+
+            $('.right-slider').css('transform', `translateX(${nowX})`);
+
+        });
+
+        
+        
+        // const bodyheight = $('body').height();
+        // const windowheight = $(window).height();
+
+        // $(window).scroll(function (){
+        //     console.log('scrollTop:', $(window).scrollTop());
+
+        // const percent = Math.floor($(window).scrollTop() / (bodyheight - windowheight) * 100);
+
+        // // $('.header').css('height', percent + '%');
+
+        // if($(window).scrollTop() > 777) {
+        //     $('.topic', '.logo').css('color', '#fff').css('transform', '.5s');  
+        // }
+
+        // else($('.topic', '.logo').css('color', '#000'))
+        // })
+    </script>
+
+    <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const naviList = document.getElementById('nav-list');
+        toggleButton.addEventListener('click', () =>{
+            naviList.classList.toggle('active');
+        })
+    </script>
+
+
+
+    
+</body>
+</html>

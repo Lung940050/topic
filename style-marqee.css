@@ -1,0 +1,37 @@
+.marqee {
+	height: 150px;
+	margin: 0 auto;
+	overflow: hidden; 
+	position: relative;
+	
+}
+
+.marqee > ul {
+	padding-left: 0;
+	display: flex;
+	list-style-type: none;
+	animation: marqee 15s linear infinite;
+	position: absolute;
+}
+
+.marqee > ul > li {
+	font-size: 100px;
+	font-family: Arial, Helvetica, sans-serif;
+	white-space: nowrap;
+	margin-right: 30px;
+	font-weight: bold;
+	color: rgb(140, 140, 140);
+}
+
+@keyframes marqee {
+	0% {
+		left: 100%;
+		transform: translateX(0%);
+	}
+
+	100% {
+		left: 0;
+		transform: translateX(-100%);
+	}
+}
+

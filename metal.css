@@ -1,0 +1,374 @@
+body{
+    margin: 0px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(31, 15, 13);
+}
+
+.page1{
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+    background: url(img/metal-main.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* .page1 img{
+    max-width: 100%;
+} */
+
+.mynavbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 300;
+    /* margin: 10px 0; */
+
+}
+
+.mynavbar-left, .topic, .logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+.mynavbar-left{
+    margin: 0 20px ;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.topic{
+    margin-left: 10px;
+}
+
+.topic a{
+    padding: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mynavbar h3{
+    font-weight: 700;
+}
+
+.logo{
+    margin-right: 20px;
+}
+.logo i{
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.page1 .title{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.title h1{
+    /* position: absolute; */
+    margin: 0;
+    font-size: 8em;
+    letter-spacing: 10px;
+    color: #fff;
+    font-weight: 700;
+    /* top: 50%;
+    transform: translatey(-50%); */
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+
+    overflow:hidden;
+    background: linear-gradient(90deg, rgb(50, 28, 22), #fff, rgb(50, 28, 22));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: metal 5s linear infinite;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.05);
+}
+
+@keyframes metal {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+
+.menu{
+    display: none;
+    z-index: 300;
+}
+
+.menu-line{
+    width: 20px;
+    height: 1px;
+    color: #111;
+    border-bottom: 3px solid #111;
+    margin-bottom: 3px;
+}
+
+@media all and (max-width:480px) {
+    .logo{
+        display: none;
+    }
+
+    .mynavbar{
+        height: 50px;
+    }
+
+   
+    .topic{
+        flex-direction: column;
+        position: relative;
+        background-color: rgba(153, 153, 153, 0.466);
+        left: 60%;
+        top: 150%;
+        
+    }
+    .menu{
+        display: none;
+        z-index: 300;
+    }
+    
+    .menu-line{
+        width: 20px;
+        height: 1px;
+        color: rgb(255, 255, 255);
+        border-bottom: 3px solid rgb(255, 255, 255);
+        margin-bottom: 3px;
+    }
+    
+    @media all and (max-width:480px) {
+        .logo{
+            display: none;
+        }
+    
+        .mynavbar{
+            height: 50px;
+        }
+    
+       
+        .topic{
+            flex-direction: column;
+            position: relative;
+            background-color: rgba(153, 153, 153, 0.466);
+            left: 60%;
+            top: 150%;
+            
+        }
+        .menu{
+            display: block;
+            padding: 15px;
+        }
+    
+        .topic {
+            padding-top: 5px;
+            display: none;
+            
+        }
+    
+        .topic a{
+            display: block;
+            border-bottom: 1px solid #fff;
+            text-align: center;
+            padding: 5px 0;
+            
+        }
+    
+        .active{
+            display: block;
+        }
+    }}
+
+/* page1------------------------------- */
+/* page2------------------------------- */
+
+.page2{
+    margin: 150px 0;
+}
+
+.page2 .random{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.random .white {
+    margin: 0 100px;
+}
+
+.random-text{
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    left: 35%;
+    width: 100%;
+}
+
+
+
+.random-text h1{
+    position: absolute;
+    font-size: 4em;
+    color: #fff;
+}
+
+.random-text p{
+  position: absolute;
+  margin-top: 350px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  line-height: 30px;
+}
+/* page2------------------------------- */
+/* page3------------------------------- */
+.page3{
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.all{
+    position: relative;
+ 
+}
+
+.all img{
+    width: 100%;
+}
+
+.all .name{
+    display: flex;
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    justify-content: center;
+    width: 100%;
+    
+    
+
+}
+
+.name p{
+    padding: 0 80px;
+    letter-spacing: 0.1em;
+
+}
+
+.all h1{
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    color: #fff;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+/* page3------------------------------- */
+/* page4------------------------------- */
+.page4{
+    width: 100%;
+    margin-bottom: 150px;
+}
+.page4 .brass{
+    display: flex;
+    position: relative;
+
+      
+}
+
+.brass .text{
+    z-index: 300;
+    position: absolute;
+    left: 45%;
+    bottom: 5%;
+    
+}
+
+.brass .text h1{
+    font-size: 4em;
+    color: #fff;
+    letter-spacing: 0.1em;
+    margin: 10px 0;
+}
+
+.brass .text p{
+    color: #fff;
+    letter-spacing: 0.1em;
+    line-height: 30px;
+    width: 80%;
+}
+
+.brass .b-left{
+    z-index: 200;
+}
+
+.brass .b-right{
+    z-index: 100;
+    
+}
+
+.b-right img{
+    position: absolute ;
+    bottom: 0;
+    right: 0;
+}
+/* page4------------------------------- */
+/* page5------------------------------- */
+.page5{
+    margin-bottom: 150px;
+    width: 100%;
+}
+
+.page5 .ring{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.page5 .ring .ring-right{
+   margin-right: 5%;
+   position: relative;
+}
+
+.page5 .ring .ring-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.ring-left h1{
+    color: #fff;
+    font-size: 4em;
+    letter-spacing: 0.1em;
+    margin: 15px 0;
+}
+
+.ring-left p{
+    color: #fff;
+    letter-spacing: 0.1em;
+    line-height: 30px;
+}
+
+.line img{   /* 絕對有問題WWW  */
+   position: absolute;
+   bottom: 55%;
+   right: 55%;
+   width: 80%;
+}

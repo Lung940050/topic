@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTRL+</title>
+    <link rel="stylesheet" href="ctrl.css">
+    <link
+      rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+
+    
+</head>
+<style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+      @media (max-width:768px) {
+          .page3 .rule p {
+              font-size: 10px;
+              line-height: 1.5em;
+            }
+
+          .pre1, .pre2, .pre3, .pre4, .pre5, .start1, .start2, .start3, .start4, .start5{
+            padding: 0 15px;
+            letter-spacing: 0.08em;
+    
+            }
+
+          .ch-sl, .item-sl, .event-sl{
+            width: 200px;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+            margin-top: 30px;
+            border-radius: 0.7em;
+            }
+
+            .ch-slider img, .item-slider img, .event-slider img{
+            width: 53.8%;
+            height: auto;
+            object-fit: cover;
+            }
+
+            .ch-sl .slider-dots li,.item-sl .slider-dots li,.event-sl .slider-dots li{
+            width: 5px;
+            height:5px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            margin: 0 5px;
+            }
+
+            .page5 h2{
+                padding: 0;
+            }
+
+            .character, .item, .event{
+             width: 200px;
+            }
+
+            .intro .in-main{
+                width: 90%;
+            }
+
+            .page4 p, .page5 p{
+                line-height: 20px;
+
+            }
+      }
+
+      @media (max-width:415px) {
+
+          .mynavbar{
+              max-width: 414px;
+          }
+          .type{
+              font-size: 1.5em;
+          }
+
+          .all-course{
+              flex-direction: column;
+              width: 100%;
+          }
+
+          .course1, .course2, .course3{
+              width: 100%;
+              padding: 0;
+          }
+
+          .all-course p{
+              width: 90%;
+          }
+
+          .top-text{
+              flex-direction: column;
+          }
+
+          .top-text p{
+              width: 90%;
+              padding: 0 20px;
+          }
+
+          .page3 .rule p {
+              font-size: 10px;
+              line-height: 1.5em;
+            }
+
+            .page3 .rule .pre, .start{
+                flex-wrap: wrap;
+            }
+
+            .page3 h3{
+                font-size: 1em;
+            }
+
+          .pre1, .pre2, .pre3, .pre4, .pre5, .start1, .start2, .start3, .start4, .start5{
+            padding: 0 15px;
+            letter-spacing: 0.08em;
+            width: 40%;
+    
+            }
+
+            .intro-left{
+                top: 10%;
+            }
+
+            .page4 p{
+                padding: 2px 0;
+                font-size: 1.5px;
+                width: 200px;
+                
+            }
+
+            .intro-right .pic{
+                display: none;
+            }
+
+            .intro-right{
+                left: 40%;
+            }
+
+            .intro-right p{
+                padding-top: 50px;
+                width: 250px;
+                
+            }
+
+            .page4 .intro-right img{
+                width: 50%;
+                height: 50%;
+            }
+            .page5 .card{
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .page5 h2{
+                margin: 30px 0;
+            }
+
+            .card h2{
+                margin-bottom: 0;
+            }
+
+          .ch-sl, .item-sl, .event-sl{
+            width: 200px;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+            margin-top: 30px;
+            border-radius: 0.7em;
+            }
+
+            .ch-slider img, .item-slider img, .event-slider img{
+            width: 53.8%;
+            height: auto;
+            object-fit: cover;
+            }
+
+            .ch-sl .slider-dots li,.item-sl .slider-dots li,.event-sl .slider-dots li{
+            width: 5px;
+            height:5px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            margin: 0 5px;
+            }
+
+            .page5 h2{
+                padding: 0;
+            }
+
+            .character, .item, .event{
+             width: 200px;
+            }
+
+            .intro .in-main{
+                width: 90%;
+            }
+
+            .page4 p, .page5 p{
+                line-height: 20px;
+
+            }
+      }
+</style>
+<body>
+    <nav class="mynavbar">
+        <div class="mynavbar-left"
+        ><a href="mainpage.html" style="text-decoration: none; color: rgb(255, 255, 255);"><h2>LUNG</h2></a>
+        <div class="topic" id="nav-list">
+            <a href="industral.html">Industrial Design</a>
+            <a href="metalsmithing.html">Metalsmithing</a>
+            <a href="digital.html">Digital Drawing</a>
+            <a href="hand.html">Hand Draing </a> 
+            <!-- <a href="">UI Design</a> -->
+        </div>
+    </div>
+       
+        <div class="logo">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+
+
+    <div class="page1-main">
+        <div class="text">
+            
+        <h1 class="ctrl">CTRL+</h1>
+        <!-- <h1 class="cvzx">C/V/Z/X</h1> -->
+        </div>
+
+        <div class="container">
+            <div class="type">
+            <span id="type-text">...</span>
+            <span class="blinking-cursor">_</span>
+
+            <script src="type.js"></script>
+            </div>
+            <!-- <div class="book-main">
+            <div class="book">
+                <div class="back"></div>
+                <div class="page6"></div>
+                <div class="page5"></div>
+                <div class="page4">
+                    <p>2019 global generation 53.6 million tons of electronic waste. Most environmental education does not mention electronic products. Many people do not know the impact of electronic waste and the correct recycling way of electronic products. Therefore, this lesson plan is designed to let students understand the importance of e-waste to environmental protection.</p>
+                </div>
+                <div class="page3"></div>
+                <div class="page2"></div>
+                <div class="page1"></div>
+                <div class="front"></div>
+            </div>
+            </div> -->
+            <!-- <div class="ctrl-main">
+                <img src="img/ctrl-main.png" alt="">
+                <img src="img/1x/ctrlhand-1.png" alt="" class="hand1">
+                <img src="img/1x/ctrlhand-2.png" alt="" class="hand2">
+            </div> -->
+        </div>
+        
+    </div>
+    <div class="page2">
+        <div class="all-course">
+        <div class="course1">
+            <div class="text">
+                <h4>Course 1 - What is e-waste</h4>
+                
+            </div>
+            <div class="book">
+                <img src="img/book1.png" alt="">
+            </div>
+            <p>Understand what is e-waste and e-pollution, and what kind of impact and harm e-waste has on human society and nature, and resonate with students by focusing on life issues.
+            </p>
+           
+        </div>
+            <div class="course2">
+                <div class="text">
+                    <h4>Course 2 - What can we do for the earth</h4>
+                    
+                </div>
+                <div class="book">
+                    <img src="img/book2.png" alt="">
+                </div>
+                <p>Understand the main origin and reasons of e-waste, know why to recycle and reduce e-waste, and understand the recycling channels of various electronic products.
+                </p>
+            </div>
+            <div class="course3">
+                <div class="text">
+                    <h4>Course 3 - We and E-waste</h4>
+                    
+                </div>
+                <div class="book">
+                    <img src="img/book3.png" alt="">
+                </div>
+                <p>Use the role-playing method of board games to let students think about the relationship between their own consumption behavior and the environment in the experience.
+                </p>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="page3">
+        <div class="top-text">
+            <p>In the course 3, we use discarded circuit boards as the game map to think about the relationship between us and the environment in the form of board game role-playing. During the game, players will act as environmentalists, black-hearted merchants and civilians respectively, collect waste through strategies, and direct the game to their own goals one by one.</p>
+            <p>Number of players - 6~10<br>
+                The best number of players - 6~8<br>
+                Suitable age - 12 years old and above<br>
+                Play time - 30~40 minutes<br>
+                Game type - strategy, environmental awareness</p>
+        </div>
+        <div class="rule">
+            <h2>Board game rules</h2>
+            <div class="pre">
+                <div class="pre1">
+                    <h3>Pre-game</h3>
+                    <img src="img/1x/pre1.png" alt="">
+                    <p>Spread out the game map.</p>
+                </div>
+                <div class="pre2">
+                    <h3>Part placement</h3>
+                    <img src="img/1x/pre2.png" alt="">
+                    <p>Place the parts on the blue 
+                        dots of the game platform, 
+                        about 20 pieces can be placed.</p>
+                </div>
+                <div class="pre3">
+                    <h3>Draw a role card</h3>
+                    <img src="img/1x/pre3.png" alt="">
+                    <p>One person plays one role.</p>
+                </div>
+                <div class="pre4">
+                    <h3>Draw function card</h3>
+                    <img src="img/1x/pre4.png" alt="">
+                    <p>One person draws five function cards.</p>
+                </div>
+                <div class="pre5"></div>
+            </div>
+
+            <div class="start">
+                <div class="start1">
+                    <h3>Start the game
+                    </h3>
+                    <img src="img/1x/start1.png" alt="">
+                    <p>The unscrupulous factory manager 
+                        starts the game for the first step, 
+                        and then proceeds to the right in 
+                        sequence.</p>
+                </div>
+                <div class="start2">
+                    <h3>Dice</h3>
+                    <img src="img/1x/start2.png" alt="">
+                    <p>Take turns to determine the 
+                        number of steps taken by 
+                        the dice, and the player will 
+                        take away the parts encountered
+                         on the road.</p>
+                </div>
+                <div class="start3">
+                    <h3>Use cards</h3>
+                    <img src="img/1x/start3.png" alt="">
+                    <p>At the end of your turn, you can 
+                        choose whether to use feature 
+                        cards.</p>
+                </div>
+                <div class="start4">
+                    <h3>End of each round</h3>
+                    <img src="img/1x/start4.png" alt="">
+                    <p>At the end of the round, everyone 
+                        except the factory director must 
+                        select a card from their hand and 
+                        give it to the factory director.</p>
+                </div>
+                <div class="start5">
+                    <h3>game over</h3>
+                    <p>The game is over and the 
+                        score is settled until all the
+                         parts are used up.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page4">
+        <h2>Map introduction</h2>
+        <div class="intro">
+        <div class="intro-left">
+            <p>The empty circuit map area, where the 
+                obtained parts can be placed.</p>
+                <p>After the game is over, you can store
+                    the parts and cards here.</p>
+        </div>
+        <img src="img/introduce.png" alt="" class="in-main">
+        <div class="intro-right">
+            <div class="pic">
+                <img src="img/1x/cir.png" alt="">
+                <img src="img/1x/per.png" alt="">
+                <!-- <p>The pieces are made from 
+                    electronic waste parts.</p> -->
+                
+            </div>
+            <p>When the game is starting, the player-controlled  
+                piece passes through a dot with a part, the player 
+                obtains the part.</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="page5">
+        
+        <h2>Card introduction</h2>
+        <div class="card">
+            <div class="character">
+                <h2>Character card</h2>
+                <div class="ch-sl">
+                    <ul class="ch-slider">
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ch1.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ch2.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ch3.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ch4.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ch5.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ch6.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ch7.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ch8.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ch9.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ch10.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="slider-dots">
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                    </ul>
+                </div>
+                <p>Each character has its own character
+                    description and exclusive skills.</p>
+                
+            </div>
+            <div class="item">
+                <h2>Item card</h2>
+                <div class="item-sl">
+                    <ul class="item-slider">
+                        <li style="list-style-type: none;">
+                            <img src="img/card/it1.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/it2.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/it3.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/it4.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/it5.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/it6.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/it7.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/it8.png" alt="">
+                        </li>
+                        
+                    </ul>
+                    <ul class="slider-dots-2">
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                    </ul>
+                </div>
+                <p>The event card is adapted from what 
+                    mayhappen in the real world, making 
+                    the overall game closer to reality.</p>
+            </div>
+            <div class="event">
+                <h2>Event card</h2>
+                <div class="event-sl">
+                    <ul class="event-slider">
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ev1.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ev2.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ev3.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ev4.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ev5.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ev6.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ev7.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ev8.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ev9.png" alt="">
+                        </li>
+                        <li style="list-style-type: none;">
+                            <img src="img/card/ev10.png" alt="">
+                        </li>
+                        
+                        
+                    </ul>
+                    <ul class="slider-dots-3">
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                        <li style="list-style-type: none;"></li>
+                    </ul>
+                </div>
+                <p>The item card can help you frame 
+                    others, or help your teammates or 
+                    yourself to get more parts.</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $('.slider-dots li').hover(function () {
+            console.log('hi', $(this));
+            
+            $(this).css('background', '#fff');
+            $(this).siblings().css('background', 'transparent');
+
+            const nowIndex = $(this).index();
+            const nowX = nowIndex * -373 + 'px';
+            console.log('nowX:', nowX);
+
+            // $('.imgs-wrap').css('transform', 'translatex(' + nowx + ')');
+
+            $('.ch-slider').css('transform', `translateX(${nowX})`);
+
+        });
+
+        $('.slider-dots-2 li').hover(function () {
+            console.log('hi', $(this));
+            
+            $(this).css('background', '#fff');
+            $(this).siblings().css('background', 'transparent');
+
+            const nowIndex = $(this).index();
+            const nowX = nowIndex * -373 + 'px';
+            console.log('nowX:', nowX);
+
+            // $('.imgs-wrap').css('transform', 'translatex(' + nowx + ')');
+
+            $('.item-slider').css('transform', `translateX(${nowX})`);
+
+        });
+
+        $('.slider-dots-3 li').hover(function () {
+            console.log('hi', $(this));
+            
+            $(this).css('background', '#fff');
+            $(this).siblings().css('background', 'transparent');
+
+            const nowIndex = $(this).index();
+            const nowX = nowIndex * -373 + 'px';
+            console.log('nowX:', nowX);
+
+            // $('.imgs-wrap').css('transform', 'translatex(' + nowx + ')');
+
+            $('.event-slider').css('transform', `translateX(${nowX})`);
+
+        });
+
+    </script>
+
+<script>
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById('nav-list');
+    toggleButton.addEventListener('click', () =>{
+        naviList.classList.toggle('active');
+    })
+  </script>
+
+
+</body>
+</html>
